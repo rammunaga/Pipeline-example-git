@@ -1,6 +1,7 @@
 pipeline{
     agent any
 
+    stages{
     stage("complie"){
         steps{
             bat 'javac Test.java'
@@ -14,4 +15,6 @@ pipeline{
         }  
 
     }
+    }
+
 }
